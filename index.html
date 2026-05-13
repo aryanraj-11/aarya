@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locked with Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lock-screen">
+    <div class="lock-container">
+        <h2>Enter the Secret Word</h2>
+        <p>Hint:- When we proposed to each other?...</p>
+        <input type="password" id="pass-input" placeholder="Enter password...">
+        <button onclick="checkPass()">Unlock</button>
+    </div>
+
+    <script>
+        function checkPass() {
+            const secret = document.getElementById('pass-input').value.toLowerCase();
+            // Change 'pizza' to whatever your secret word is!
+            if (secret === '21April') { 
+                window.location.href = "valentine.html"; 
+            } else {
+                alert("That's not it! Try again, love.");
+            }
+        }
+    </script>
+</body>
+</html>
