@@ -28,6 +28,51 @@
             <p class="love-note">"To the peace of my life, you make every day brighter... 💗"</p>
         </div>
     </div>
+     <div class="gift-grid">
+        <div class="gift-box" onclick="nextScreen(3)">
+            <span class="gift-icon">🌹</span>
+            <span class="gift-text">For You</span>
+        </div>
+        
+        <div class="gift-box" onclick="nextScreen(4)">
+            <span class="gift-icon">💌</span>
+            <span class="gift-text">My Heart</span>
+        </div>
+        
+        <div class="gift-box" onclick="nextScreen(5)">
+            <span class="gift-icon">🎵</span>
+            <span class="gift-text">Our Song</span>
+        </div>
+    </div>
+</div>
+
+        <div id="screen3" class="screen">
+            <h1>A Cute Bouquet For My Cute Valentine</h1>
+            <img src="Bouquet.jpg.png" width="150">
+            <p>"You will forever be my only option."</p>
+            <button onclick="nextScreen(2)">Back to Gifts</button>
+        </div>
+
+        <div id="screen4" class="screen">
+            <h3>Words from my Heart</h3>
+            <div class="letter">
+                Even though we’ve barely talked, I couldn’t help but notice you — not in a dramatic way, just naturally,
+                your presence felt calm, innocent, and genuinely pure, and every time I saw you I found myself quietly watching,
+                not because of looks but because there was something peaceful about your energy,
+                so I thought I’d keep this simple and honest and just say it — if you’re comfortable,
+                I’d like to invite you for Valentine’s.....
+            </div>
+            <button onclick="nextScreen(2)">Back to Gifts</button>
+        </div>
+
+        <div id="screen5" class="screen">
+    <h1>A Song for You</h1>
+    <img src="QR.jpeg" alt="Scan Me" style="width:200px; height:200px;">
+    <p>Scan this to hear how I feel.</p>
+    <button onclick="nextScreen(1)">Restart ❤️</button>
+</div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
