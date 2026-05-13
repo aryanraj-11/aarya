@@ -9,40 +9,25 @@
 <body>
     <div class="container">
         <div id="question-page">
-            <img src="mike-hey.jpeg" alt="Cute Bear" class="gif">
+            <img src="mike.jpg.jpeg" alt="Cute Bear" class="gif">
             <h1>Hey Aaryaa, Cutiepie🌹</h1>
-            <h2>Do you love me ?..</h2>
             <div class="buttons">
                 <button id="yes-btn" onclick="showSurprise()">YES!</button>
                 <button id="no-btn" onmouseover="moveButton()">No</button>
             </div>
         </div>
 
-        <div id="screen2" class="screen">
-    <h2 style="margin-bottom: 10px;">Yay! I love you! ❤️</h2>
-    <p style="font-size: 14px; margin-bottom: 15px;">Here are some of our best memories:</p>
-
-    <div class="photo-memories" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-        <div style="display: flex; gap: 10px;">
-            <img src="photo1.jpg" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
-            <img src="photo2.jpg" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
-        </div>
-        <img src="photo3.jpg" style="width: 210px; height: 120px; object-fit: cover; border-radius: 10px;">
-    </div>
-
-    <p style="margin-top: 20px; font-size: 14px;">And I have some surprises for you:</p>
-    <div class="gift-grid">
-        <div class="gift-box" onclick="nextScreen(3)">
-            <span class="gift-icon">🌹</span>
-            <span class="gift-label">Surprise 1</span>
-        </div>
-        <div class="gift-box" onclick="nextScreen(4)">
-            <span class="gift-icon">💌</span>
-            <span class="gift-label">Surprise 2</span>
-        </div>
-        <div class="gift-box" onclick="nextScreen(5)">
-            <span class="gift-icon">🎵</span>
-            <span class="gift-label">Surprise 3</span>
+        <div id="surprise-page" class="hidden">
+            <h1>Yay! I love you! ❤️</h1>
+            <p>Here are some of our best memories:</p>
+            <div class="photo-gallery">
+                <img src="us3.jpg.jpeg" alt="Memory 1">
+                <img src="us.jpg.jpeg" alt="Memory 2">
+                <img src="us4.jpg.jpeg" alt="Memory 3">
+            </div>
+            <p class="love-note">"To the peace of my life, you make every day brighter... 💗"</p>
         </div>
     </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
