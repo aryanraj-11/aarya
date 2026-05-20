@@ -1,68 +1,7 @@
-@keyframes love-pulse {
-    0% { background-color: #fff1f2; }
-    50% { background-color: #ffd1d7; }
-    100% { background-color: #fff1f2; }
-}
+/* --- General Styling --- */
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* The magic lines for your background */
-    background-image: url('background.jpg.jpg'); 
-    background-size: cover;        /* Makes the image cover the whole screen */
-    background-position: center;   /* Centers the hearts */
-    background-attachment: fixed;  /* Keeps it still when scrolling */
-    background-repeat: no-repeat;
-    
-    font-family: 'Arial', sans-serif;
-}
-.buttons { margin-top: 20px; }
-button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#yes-btn { background-color: #ff4d6d; color: white; margin-right: 10px; }
-#no-btn { background-color: #6c757d; color: white; position: relative; }
-
-.hidden { display: none; }
-.photo-gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin: 10px;
-    border: 5px solid white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-#pass-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ffafbd;
-    margin-bottom: 15px;
-    width: 80%;
-}
-.container {
-    background: rgba(255, 255, 255, 0.85); /* White with 85% transparency */
-    padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px); /* This blurs the background behind the box! */
-    text-align: center;
-    max-width: 500px;
-    width: 90%;
-}
-.lock-screen {
-    background-image: url('background.jpg.jpg'); /* Ensure this filename is correct */
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('background.png'); /* Apni image ka exact naam dalein */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,23 +9,99 @@ button {
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #d17a93; 
 }
 
-.lock-container {
-    background: rgba(255, 255, 255, 0.9);
+.container {
+    background-color: rgba(255, 255, 255, 0.85); 
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 600px;
+    width: 100%;
 }
-.gif {
-    /* This ensures the image never gets wider than the white box */
-    width: 100%; 
-    max-width: 300px; /* Adjust this number to make the image smaller or larger */
-    height: auto; /* This keeps the image from looking stretched */
-    border-radius: 15px; /* Optional: gives the photo nice rounded corners */
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.flower-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('flower.png'); /* Apni image ka exact naam dalein */
+    background-size: cover;
+}
+
+button {
+    background-color: #f7ced7; 
+    color: #d17a93; 
+    border: 2px solid #d17a93;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #d17a93;
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* --- Individual "Page" Views --- */
+.page {
+    display: none; 
+}
+
+.active-page {
+    display: block; 
+}
+
+/* Envelope Selection Page */
+.envelope-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.envelope {
+    border: 2px solid #d17a93;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    background-color: #fff0f3;
+}
+
+.envelope:hover {
+    transform: scale(1.05); 
+}
+
+/* Letter Content */
+.letter-content textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #d17a93;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d17a93;
+    resize: none;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.us-photo {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
