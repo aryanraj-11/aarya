@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Favorite Person ❤️</title>
+    <title>Open When... for [Girlfriend's Name]</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <div id="question-page">
-            <img src="mike-hey.jpeg" alt="Cute Bear" class="gif">
-            <h1>Hey Aaryaa, Cutiepie🌹</h1>
-            <h1>DO YOU LOVE ME ?..</h1>
-            <div class="buttons">
-                <button id="yes-btn" onclick="showSurprise()">YES!</button>
-                <button id="no-btn" onmouseover="moveButton()">No</button>
+        <div class="flower-icon"></div>
+
+        <div id="welcome-page" class="page active-page">
+            <h2>I made something for you!</h2>
+            <button onclick="showPage('surprise-confirm-page')">What?</button>
+        </div>
+
+        <div id="surprise-confirm-page" class="page">
+            <h2>Will you see it?</h2>
+            <button onclick="showPage('ready-confirm-page')">Yes</button>
+            <button id="no-button">No</button>
+        </div>
+
+        <div id="ready-confirm-page" class="page">
+            <h2>Are you ready for the surprise?</h2>
+            <button onclick="showPage('envelopes-page')">Yes!!</button>
+        </div>
+
+        <div id="envelopes-page" class="page">
+            <h2>Open When...</h2>
+            <div class="envelope-grid">
+                <div class="envelope" onclick="openLetter('miss-me')">You miss me</div>
+                <div class="envelope" onclick="openLetter('we-fight')">We fight</div>
+                <div class="envelope" onclick="openLetter('youre-sad')">You're sad</div>
             </div>
         </div>
 
-        <div id="surprise-page" class="hidden">
-            <h1>Yay! I love you! ❤️</h1>
-            <p>Here are some of our best memories:</p>
-            <div class="photo-gallery">
-                <img src="1.jpeg" alt="Memory 1">
-                <img src="3.jpeg" alt="Memory 2">
-                <img src="4.jpeg" alt="Memory 3">
-                <img src="6.jpeg" alt="Memory 4">
-                <img src="7.jpeg" alt="Memory 5">
+        <div id="letter-page" class="page">
+            <div class="letter-content">
+                <h3 id="letter-title"></h3>
+                <img src="us.jpg" alt="A picture of us" class="us-photo">
+                <textarea id="letter-text" readonly></textarea>
+                <button onclick="showPage('envelopes-page')">Go Back</button>
             </div>
-            <p class="love-note">"To the peace of my life, you make every day brighter... 💗"</p>
         </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
