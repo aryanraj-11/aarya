@@ -1,6 +1,6 @@
 // 1. Secret Word Buttons ke liye logic
 function checkAnswer(selectedOption) {
-    const correctAnswer = 'Bye'; // Srushti ka word yaha set karein
+    const correctAnswer = '11april';
 
     if (selectedOption === correctAnswer) {
         // Lock screen ko chhupayein aur Valentine content dikhayein
